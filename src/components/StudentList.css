@@ -1,0 +1,161 @@
+.student-list {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+input {
+    width: calc(33% - 20px);
+    padding: 12px 20px;
+    margin: 8px;
+    background: #f8f9fa;
+    border: 1px solid #e1e1e1;
+    border-radius: 12px;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #4776e6;
+    outline: none;
+    box-shadow: 0 0 15px rgba(71, 118, 230, 0.15);
+    background: #ffffff;
+}
+
+input::placeholder {
+    color: #95a5a6;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 8px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #4776e6, #8e54e9);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #8e54e9, #4776e6);
+}
+
+/* Table Styles */
+.student-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin-top: 30px;
+}
+
+.student-table th {
+    padding: 15px;
+    text-align: left;
+    color: #2c3e50;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #f8f9fa;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+.student-table td {
+    padding: 15px;
+    color: #2c3e50;
+    background: #ffffff;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.student-table tr {
+    transition: all 0.3s ease;
+}
+
+.student-table tr:hover td {
+    background: #f8f9fa;
+    transform: scale(1.01);
+}
+
+.student-table th:first-child,
+.student-table td:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.student-table th:last-child,
+.student-table td:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.student-table button {
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #ff6b6b, #ee5253);
+    font-size: 14px;
+}
+
+.student-table button:hover {
+    background: linear-gradient(135deg, #ee5253, #ff6b6b);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .student-list {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    input {
+        width: calc(100% - 16px);
+    }
+
+    .student-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+/* Add scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #4776e6, #8e54e9);
+    border-radius: 4px;
+}
+
+/* Add this to your body or main container */
+body {
+    background: #f8f9fa;
+    min-height: 100vh;
+}
